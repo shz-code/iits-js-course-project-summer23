@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <!-- Additional styles -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
@@ -53,11 +53,60 @@
       <!-- All Books page -->
       <div id="showBooks">
         <h1 class="text-light">All Books</h1>
-        <div class="all_books mt-4 row"></div>
+        <div class="all_books mt-4 row">
+          <div class="book col-lg-6 mb-4">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-3 book_img">
+                  <img
+                    src="https://m.media-amazon.com/images/I/51Ga5GuElyL._SX331_BO1,204,203,200_.jpg"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body text-center text-md-start">
+                    <h5 class="card-title">Book Name</h5>
+                    <p class="card-text">
+                      Description
+                    </p>
+                    <p class="card-text">Author</p>
+                    <p class="card-text">Price Taka</p>
+                    <p class="card-text"><small class="opacity-50">Rating/5</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="book col-lg-6 mb-4">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-3 book_img">
+                  <img
+                    src="https://m.media-amazon.com/images/I/51Ga5GuElyL._SX331_BO1,204,203,200_.jpg"
+                    class="img-fluid rounded-start"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body text-center text-md-start">
+                    <h5 class="card-title">Book Name</h5>
+                    <p class="card-text">
+                      Description
+                    </p>
+                    <p class="card-text">Author</p>
+                    <p class="card-text">Price Taka</p>
+                    <p class="card-text"><small class="opacity-50">Rating/5</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Add new book page -->
-      <div id="showForm" style="display: none">
+      <div id="showForm">
         <h1 class="text-light">Add New Book</h1>
         <form class="text-light" id="addNewBookForm">
           <div class="mb-3">
@@ -130,6 +179,6 @@
     ></script>
 
     <!-- Additional scripts -->
-    <script src="./main.js"></script>
+    <!-- <script src="./main.js"></script> -->
   </body>
 </html>
