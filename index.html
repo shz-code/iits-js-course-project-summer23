@@ -18,31 +18,29 @@
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar py-4" data-bs-theme="dark">
-      <div class="container">
+    <nav class="navbar py-4">
+      <div class="container d-flex">
         <div
-          class="w-100 d-flex flex-column gap-2 gap-md-0 text-center text-md-satrt flex-md-row justify-content-between"
+          class="w-100 d-flex flex-column gap-2 gap-md-0 text-center text-md-start flex-md-row justify-content-between"
         >
-          <span class="navbar-brand">Book Ratings</span>
+          <span class="navbar-brand text-light">Book Ratings</span>
           <div
-            class="d-flex pe-4 pe-md-0 g-2 w-100 w-md-50 justify-content-center gap-4 align-items-center"
+            class="d-flex pe-4 pe-md-0 w-md-50 g-2 gap-4 justify-content-center w-100 align-items-center"
           >
-            <!-- Navigation links -->
-            <a class="text-light" onclick="activeShowBooks()">Books</a>
-            <a class="text-light" onclick="activeShowForm()">Add new Book</a>
+            <!-- navigation links -->
+            <a class="text-light a-text">Books</a>
+            <a class="text-light a-text">Add new Books</a>
           </div>
-          <!-- Search Form -->
+          <!-- search bar -->
+
           <form class="d-flex" role="search" id="search-form">
             <input
-              class="form-control me-2"
               type="search"
+              class="form-control input me-3"
               placeholder="Search"
-              aria-label="Search"
               id="searchVal"
             />
-            <button class="btn btn-outline-project-primary" type="submit">
-              Search
-            </button>
+            <button class="btn btn-outline-light" type="submit">Search</button>
           </form>
         </div>
       </div>
@@ -67,12 +65,12 @@
                 <div class="col-md-9">
                   <div class="card-body text-center text-md-start">
                     <h5 class="card-title">Book Name</h5>
-                    <p class="card-text">
-                      Description
-                    </p>
+                    <p class="card-text">Description</p>
                     <p class="card-text">Author</p>
                     <p class="card-text">Price Taka</p>
-                    <p class="card-text"><small class="opacity-50">Rating/5</small></p>
+                    <p class="card-text">
+                      <small class="opacity-50">Rating/5</small>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -91,12 +89,12 @@
                 <div class="col-md-9">
                   <div class="card-body text-center text-md-start">
                     <h5 class="card-title">Book Name</h5>
-                    <p class="card-text">
-                      Description
-                    </p>
+                    <p class="card-text">Description</p>
                     <p class="card-text">Author</p>
                     <p class="card-text">Price Taka</p>
-                    <p class="card-text"><small class="opacity-50">Rating/5</small></p>
+                    <p class="card-text">
+                      <small class="opacity-50">Rating/5</small>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -164,7 +162,7 @@
               max="5"
             />
           </div>
-          <button type="submit" class="btn btn-outline-project-primary">
+          <button type="submit" class="btn btn-outline-light">
             Submit
           </button>
         </form>
