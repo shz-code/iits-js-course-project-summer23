@@ -1,3 +1,3 @@
-# Front-end development using JavaScript project dom
+# Front-end development using JavaScript project Event Handling
 
-Dom assignment and class code
+Event Handing assignment and class code
