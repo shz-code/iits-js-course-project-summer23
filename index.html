@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Portfolio</title>
     <!-- Bootstrap css -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -21,11 +21,14 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <!-- 
+      DO NOT CHANGE HTML TEMPLATE. WORK WITH THE GIVEN STRUCTURE.
+     -->
     <!-- Main Body -->
     <main class="row m-0">
       <!-- img-container left side of the webpage -->
       <!-- 
-        Change the color to any other suitable color using js [TASK]
+        Change the bg color to any other suitable color using js [TASK]
 
         NB: Use the same color for all other span tags that needs to be modified.
        -->
@@ -58,7 +61,10 @@
       <div class="details col-lg-7 px-5 py-3">
         <!-- Header -->
         <div class="header d-flex justify-content-end">
-          <button class="btn btn-danger">Download CV</button>
+          <!-- 
+            Button color should match the img container bg color [TASK]
+           -->
+          <button class="btn btn-danger" id="iits-btn">Download CV</button>
         </div>
         <!-- Main content body -->
         <div class="main-content">
@@ -77,7 +83,7 @@
             I am a <span class="text-danger" id="iits-prof"> ~(Your Profession)~ </span> based
             in
             <span class="text-danger" id="iits-edu">
-              ~([Your Current Level of Education)~
+              ~(Your Current Level of Education)~
             </span>
             studying
             <span class="text-danger" id="iits-study"> ~(Your Field of Study)~ </span> at
