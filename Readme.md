@@ -1,3 +1,3 @@
-# Front-end development using JavaScript project Event Handling
+# Front-end development using JavaScript project Advanced Dom Manipulation
 
-Event Handing assignment and class code
+Advanced Dom Manipulation assignment and class code
