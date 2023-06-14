@@ -17,14 +17,14 @@
         <!-- Click event -->
         <button class="btn btn-light" id="clickBtn">Click me</button>
         <!-- Mouse over event -->
-        <button class="btn btn-light mt-4" id="mouseOverBtn">
-            MouseOver on me
+        <button class="btn btn-light mt-4" id="mouseOverBtn" onmouseover="MouseOver()">
+            0
         </button>
 
         <hr class="border border-light vw-100" />
 
         <!-- Form Submit event -->
-        <form class="mt-2 w-75" id="formSub">
+        <form class="mt-2 w-75" id="formSub" onsubmit="FormSubmit()">
             <h1>Form element</h1>
             <input type="text" class="form-control" placeholder="Name" id="name" />
             <input type="number" class="form-control mt-2" placeholder="Id" id="userId" />
@@ -44,20 +44,26 @@
         let name = document.getElementById("name");
         let userId = document.getElementById("userId");
 
+        
         // Click Event
-        function BtnClicked () {
+        clickBtn.addEventListener("click",function (e) {
+            // e is the event
+            console.log(e);
             console.log("Button Clicked");
-        }
+        })
 
         // Mouse Over Event
         function MouseOver () {
-            console.log("Mouse Over");
+            // Increase the counter value by 1
+            let count = parseInt(mouseOverBtn.textContent);
+            mouseOverBtn.textContent = ++count;
         }
 
         // Form submit Event
         function FormSubmit () {
             event.preventDefault(); // To prevent default event behavior
-            console.log("Form Submit");
+            console.log(name.value);
+            console.log(userId.value);
         }
     </script>
 </body>
