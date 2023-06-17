@@ -61,19 +61,16 @@ const books = [
   it is also used to filter out books and show conditional msg
   if no book is found.
   */
-  function renderBooks(val) {
+  function renderBooks() {
     allBooks.innerHTML = "";
     books.map(function (book) {
-      if (book.name.toLowerCase().includes(val.toLowerCase())) {
         allBooks.innerHTML += bookItem(book);
-      }
+
     });
-    if (allBooks.innerHTML === "")
-      allBooks.innerHTML = `<span class="bg-danger text-white py-2 rounded">Nothing Found</span>`;
   }
   
   // renderBooks initial call
-  renderBooks("");
+  renderBooks();
   
   // View showBooks block
   function activeShowBooks() {
