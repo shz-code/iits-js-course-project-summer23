@@ -145,5 +145,61 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      let btns = document.querySelectorAll(".btn");
+      let items = document.querySelectorAll(".item");
+
+      let targetItem = "all";
+
+      function renderItems() {
+        items.forEach(function (item) {
+          let currentCategory = item.getAttribute("data-category");
+
+          if(targetItem === "all")
+        {
+          item.hidden = false;
+        }
+        else if (targetItem === currentCategory){
+          item.hidden = false;
+        }
+        else {
+           item.hidden = true;
+        }
+      });
+    }
+      
+      btns.forEach(function (btn) {
+        btn.addEventListener("click", function (e) {
+          // To check if the clicked btn has active class
+          let decision = btn.classList.contains("active");
+          
+          // Any any other btn has active class
+          let checking = document.querySelector(".active");
+          // Current btn active
+          if(decision)
+          {
+            targetItem = "all";
+            if(checking != null)
+            {
+              checking.classList.remove("active");
+            }
+          }
+          // Current btn not active
+          else {
+            targetItem = e.target.getAttribute("data-target");
+            if(checking != null)
+            {
+              checking.classList.remove("active");
+            }
+            btn.classList.add("active");
+          }
+          renderItems();
+        })
+      })
+
+      renderItems();
+
+    </script>
   </body>
 </html>
