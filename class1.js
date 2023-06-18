@@ -58,8 +58,6 @@ const books = [
   
   /*
   renderBooks function renders all the books to the DOM
-  it is also used to filter out books and show conditional msg
-  if no book is found.
   */
   function renderBooks() {
     allBooks.innerHTML = "";
@@ -83,3 +81,5 @@ const books = [
     showBooks.style.display = "none";
     showForm.style.display = "block";
   }
+
+  activeShowBooks();
