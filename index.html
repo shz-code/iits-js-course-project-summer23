@@ -43,10 +43,10 @@
             -> If the user presses "Add to Cart" button the #cart_counter will increase by 1.
             -> If the user presses #cart_dec than the chart count will decrease by 1. Make sure the cart count should not get below 0. (!important).
          -->
-        <div class="bg-light text-dark d-flex align-items-center p-1" id="cart">
+        <div class="bg-light text-dark d-flex align-items-center p-1" id="iits-cart">
           <!-- Cart Counter -->
           <span class="ps-1"><i class="fa-solid fa-cart-shopping"></i></span>
-          <span class="fw-bold me-2 px-1" id="cart_counter">0</span>
+          <span class="fw-bold me-2 px-1" id="iits-cart_counter">0</span>
           <!-- Cart decrement -->
           <span class="px-2" id="cart_dec" title="Remove an item from cart"
             ><i class="fa-solid fa-minus"></i
@@ -70,7 +70,7 @@
             <input
               type="text"
               class="form-control"
-              id="searchBox"
+              id="iits-searchBox"
               placeholder="Choose your meal & drink"
             />
             <button type="submit" class="btn">Search</button>
@@ -85,16 +85,17 @@
 
             -> This section will only be visible after the admin verification.
             -> By pressing the "X" sign this section will get hidden
+            -> After form submission all input fields should be clear
          -->
-        <section class="my-3 d-none" id="adminSection">
+        <section class="my-3 d-none" id="iits-adminSection">
           <hr>
           <!-- Header -->
           <div class="adminSection-header d-flex justify-content-between align-items-center my-2">
             <h1 class="brand-f">Add new item</h1>
-            <span id="cancelBtn"><i class="fa-solid fa-xmark fs-1 text-danger"></i></span>
+            <span id="iits-cancelBtn"><i class="fa-solid fa-xmark fs-1 text-danger"></i></span>
           </div>
           <!-- Add new item form -->
-          <form class="d-flex flex-column gap-2" id="addNewForm">
+          <form class="d-flex flex-column gap-2" id="iits-addNewForm">
             <!-- Input div -->
             <div>
               <label for="name" class="fw-bold fs-4">Name</label>
@@ -187,9 +188,11 @@
                 -> Items should be added dynamically from JS using the API
                 -> If the user selects any type #items will only show the selected type item.
                 -> If the user searched for any item #items should only show the item thats name matches the search value.
+                -> If no items found show "Nothing Found" message
 
              -->
-            <div class="col-9 row" id="items">
+            <div class="col-9 row" id="iits-items">
+
               <!-- 
                     Handle this code block in JS and dynamically add values and render the item
                  -->
@@ -219,6 +222,7 @@
               <!-- 
                 Handle this code block in JS and dynamically add values and render the item
                 -->
+
             </div>
           </div>
         </section>
@@ -228,9 +232,9 @@
     <footer class="text-light py-2">
       <div class="container">
         <p class="text-center mb-0">
-          &copy; <span class="brand-f">HanOver.</span> IITS JS Course Summer 23 <span class="text-secondary fw-bold text-decoration-underline" id="adminBtn">Admin</span>
+          &copy; <span class="brand-f">HanOver.</span> IITS JS Course Summer 23 <span class="text-secondary fw-bold text-decoration-underline" id="iits-adminBtn">Admin</span>
         </p>
-        <p class="fw-bold text-center mb-0" id="developer">~(ADD YOUR NAME USING JS)~</p>
+        <p class="fw-bold text-center mb-0" id="iits-developer">~(ADD YOUR NAME USING JS)~</p>
       </div>
     </footer>
 
