@@ -1,3 +1,1 @@
-# Front-end development using JavaScript project Event Handling
-
-Event Handing assignment and class code
+# Final Project for Front-end Development using JavaScript
