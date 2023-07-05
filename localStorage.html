@@ -41,21 +41,33 @@
         let decrementBtn = document.getElementById('decrement');
         let resetBtn = document.getElementById('reset');
 
-        let count = parseInt(counterEl.textContent);
+        let count = 0;
+
+        if(localStorage.getItem("count") != null)
+        {
+            count = parseInt(localStorage.getItem("count"));
+            counterEl.textContent = count;
+        }
+        else {
+            localStorage.setItem("count",0);
+        }
         
         incrementBtn.addEventListener('click', function () {
             count++;
             counterEl.innerText = count;
+            localStorage.setItem("count",count);
         });
 
         decrementBtn.addEventListener('click', function () {
             count--;
             counterEl.innerText = count;
+            localStorage.setItem("count",count);
         });
 
         resetBtn.addEventListener('click', function () {
             count = 0;
             counterEl.innerText = count;
+            localStorage.setItem("count",count);
         });
     </script>
 </body>
