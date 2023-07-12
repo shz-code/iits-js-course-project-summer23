@@ -1,0 +1,22 @@
+{
+    "books": [
+        {
+            "name": "Slow Horses (Deluxe Edition)",
+            "author": "Mick Herron",
+            "thumbnail": "https://m.media-amazon.com/images/I/51Ga5GuElyL._SX331_BO1,204,203,200_.jpg",
+            "desc": "Lorem",
+            "price": 140,
+            "rating": 3,
+            "id": 1
+        },
+        {
+            "name": "The Last Thing He Told Me: A Novel",
+            "author": "Laura Dave",
+            "desc": "Lorem",
+            "thumbnail": "https://m.media-amazon.com/images/P/1501171348.01._SCLZZZZZZZ_SX500_.jpg",
+            "price": 13.99,
+            "rating": 2,
+            "id": 2
+        }
+    ]
+}
