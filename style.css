@@ -18,7 +18,7 @@ footer{
   background: var(--primary-color);
 }
 
-#cart {
+#iits-cart {
   padding: 0 2px 0 10px;
   border-radius: 20px;
   font-size: 20px;
@@ -39,7 +39,6 @@ footer{
   max-width: 500px;
   width: 100%;
 }
-
 
 .brand-f {
   font-family: "Kaushan Script", cursive;
@@ -63,6 +62,9 @@ footer{
   border-radius: 5px 5px 0 0;
 }
 
+label{
+  cursor: pointer;
+}
 
 .category-pill{
   position: absolute;
@@ -90,6 +92,6 @@ footer{
   border-color: var(--secondary-color);
 }
 
-#cancelBtn , #adminBtn{
+#iits-cancelBtn , #iits-adminBtn{
   cursor: pointer;
 }
