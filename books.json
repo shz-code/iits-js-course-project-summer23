@@ -7,7 +7,7 @@
             "desc": "Lorem",
             "price": 140,
             "rating": 3,
-            "id": 1
+            "id": "1"
         },
         {
             "name": "The Last Thing He Told Me: A Novel",
@@ -16,7 +16,7 @@
             "thumbnail": "https://m.media-amazon.com/images/P/1501171348.01._SCLZZZZZZZ_SX500_.jpg",
             "price": 13.99,
             "rating": 2,
-            "id": 2
+            "id": "2"
         }
     ]
 }

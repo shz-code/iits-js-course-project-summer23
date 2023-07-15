@@ -1,4 +1,4 @@
-// https://64a5b50300c3559aa9c01831.mockapi.io/api/books/book
+// https://64b2e33138e74e386d55b072.mockapi.io/api/books
 
 const books = [];
 
@@ -63,7 +63,7 @@ function renderBooks() {
 async function getBooks() {
   allBooks.innerHTML = "Loading.....";
 
-  let url = "https://64a5b50300c3559aa9c01831.mockapi.io/api/books/book/6";
+  let url = "https://64b2e33138e74e386d55b072.mockapi.io/api/books";
   let option = {
     method: "GET"
   }
@@ -71,9 +71,9 @@ async function getBooks() {
     let response = await fetch(url,option);
     let data = await response.json();
     console.log(data);
-    // data.forEach(function(current){
-    //   books.push(current);
-    // });
+    data.forEach(function(current){
+      books.push(current);
+    });
     renderBooks();
   }
   catch (err) {
@@ -105,7 +105,7 @@ searchForm.addEventListener("submit", function (e) {
   });
 
 async function postBook(newObj) {
-  let url = "https://64a5b50300c3559aa9c01831.mockapi.io/api/books/book";
+  let url = "https://64b2e33138e74e386d55b072.mockapi.io/api/books";
   let option = {
     method: "POST",
     headers: {'content-type':'application/json'},
